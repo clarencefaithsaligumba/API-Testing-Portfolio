@@ -1,40 +1,28 @@
-# 📡 Trello API Functional Testing with Postman
+Narito ang markdown version na handa mo nang i-copy at i-paste sa iyong README.md file sa GitHub. Ginawa ko itong malinis, simple, at professional para sa iyong portfolio.
 
-This repository contains my API Testing project for the **Trello REST API**. The goal of this project is to validate the core functionalities of Trello's Board and Card management using **Postman** and **JavaScript**.
+Markdown
+# 🚀 Trello API Testing Portfolio
+**Clarence Faith B. Saligumba**
 
----
-
-## 🛠️ Tools & Technologies
-* **Postman:** Request development and test execution.
-* **JavaScript (Chai Library):** For writing automated test assertions within Postman.
-* **Trello REST API:** The target application for testing.
+Automated functional testing project for the **Trello REST API** using **Postman** and **JavaScript**. This project demonstrates end-to-end (E2E) testing, dynamic data handling, and negative testing scenarios.
 
 ---
 
-## 📋 Scenarios Tested (Board Lifecycle)
-1. **Create Board (POST):** Validates board creation with custom names and background colors.
-2. **Get Board Details (GET):** Verifies that the retrieved board data matches the created parameters.
-3. **Update Board (PUT):** Tests the ability to change board visibility or name.
-4. **Error Handling:** Validates system response when using an invalid API Key (Expected: 401 Unauthorized).
-5. **Delete Board (DELETE):** Ensures proper cleanup of resources after testing.
+### 🛠️ Tech Stack
+* **Testing Tool:** Postman
+* **Scripting:** JavaScript (Chai Assertion Library)
+* **Environment:** Postman Global & Environment Variables
+* **API Target:** Trello REST API
 
 ---
 
-## 🧪 Automated Test Samples
-I implemented JavaScript assertions in the **Tests** tab to automate verification:
+### 📋 Test Scenarios
+I validated the full lifecycle of Trello resources to ensure system reliability:
 
-```javascript
-// Example: Validating Status Code and Response Time
-pm.test("Status code is 200 OK", function () {
-    pm.response.to.have.status(200);
-});
-
-pm.test("Response time is less than 500ms", function () {
-    pm.expect(pm.response.responseTime).to.be.below(500);
-});
-
-// Example: Validating Response Body Content
-pm.test("Board Name is Correct", function () {
-    var jsonData = pm.response.json();
-    pm.expect(jsonData.name).to.eql("My Portfolio Board");
-});
+* **Board Management:** Full CRUD (Create, Read, Update, Delete) operations.
+* **List & Card Operations:** Automated creation, updating, and archiving of lists and cards.
+* **Dynamic Data Generation:** Used **Pre-request Scripts** to generate random names (e.g., *QA-Testing-Batch-1*) for every request to avoid data duplication.
+* **Negative Testing:** Verified system behavior for:
+    * **404 Not Found:** Confirming resources are permanently deleted.
+    * **401 Unauthorized:** Testing security with invalid API keys.
+    * **400 Bad Request:** Validating error handling for invalid operations.
