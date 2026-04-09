@@ -77,9 +77,7 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
+              ""
             ],
             "type": "text/javascript",
             "packages": {},
@@ -198,9 +196,7 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
+              ""
             ],
             "type": "text/javascript",
             "packages": {},
@@ -324,9 +320,7 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
+              ""
             ],
             "type": "text/javascript",
             "packages": {},
@@ -388,9 +382,7 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
+              ""
             ],
             "type": "text/javascript",
             "packages": {},
@@ -437,10 +429,6 @@
           "script": {
             "exec": [
               "let response = pm.response.json();\r",
-              "\r",
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});\r",
               "\r",
               "let expectedName = pm.environment.get(\"updatedboardName\");\r",
               "pm.test(`Verify Board Name: should exactly \"${expectedName}\"`, function () {\r",
@@ -513,9 +501,7 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
+              ""
             ],
             "type": "text/javascript",
             "packages": {},
@@ -562,10 +548,6 @@
           "script": {
             "exec": [
               "let response = pm.response.json();\r",
-              "\r",
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});\r",
               "\r",
               "let expectedName = pm.environment.get(\"updatedlistName\");\r",
               "pm.test(`Verify Board Name: should exactly \"${expectedName}\"`, function () {\r",
@@ -633,9 +615,7 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
+              ""
             ],
             "type": "text/javascript",
             "packages": {},
@@ -683,10 +663,6 @@
             "exec": [
               "let response = pm.response.json();\r",
               "\r",
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});\r",
-              "\r",
               "let expectedName = pm.environment.get(\"updatedcardName\");\r",
               "pm.test(`Verify Board Name: should exactly \"${expectedName}\"`, function () {\r",
               "    pm.expect(response.name).to.eql(expectedName);\r",
@@ -732,8 +708,8 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
+              "pm.test(\"Status code is 404 - Confirmed Deleted\", function () {\r",
+              "    pm.response.to.have.status(404);\r",
               "});"
             ],
             "type": "text/javascript",
@@ -776,107 +752,7 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
-            ],
-            "type": "text/javascript",
-            "packages": {},
-            "requests": {}
-          }
-        }
-      ],
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Accept",
-            "value": "application/json"
-          }
-        ],
-        "url": {
-          "raw": "{{baseUrl}}/1/boards/{{boardId}}?key={{apiKey}}&token={{token}}",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "1",
-            "boards",
-            "{{boardId}}"
-          ],
-          "query": [
-            {
-              "key": "key",
-              "value": "{{apiKey}}"
-            },
-            {
-              "key": "token",
-              "value": "{{token}}"
-            }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Get a Deleted Board Copy",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
-            ],
-            "type": "text/javascript",
-            "packages": {},
-            "requests": {}
-          }
-        }
-      ],
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Accept",
-            "value": "application/json"
-          }
-        ],
-        "url": {
-          "raw": "{{baseUrl}}/1/boards/{{boardId}}?key={{apiKey}}&token={{token}}",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "1",
-            "boards",
-            "{{boardId}}"
-          ],
-          "query": [
-            {
-              "key": "key",
-              "value": "{{apiKey}}"
-            },
-            {
-              "key": "token",
-              "value": "{{token}}"
-            }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Get a archived List",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
+              ""
             ],
             "type": "text/javascript",
             "packages": {},
@@ -951,26 +827,39 @@
       "response": []
     },
     {
-      "name": "Unarchive a List",
+      "name": "Get a archived List",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
       "request": {
-        "method": "PUT",
-        "header": [],
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
         "url": {
-          "raw": "{{baseUrl}}/1/lists/{{listId}}/closed?value=false&key={{apiKey}}&token={{token}}",
+          "raw": "{{baseUrl}}/1/boards/{{boardId}}?key={{apiKey}}&token={{token}}",
           "host": [
             "{{baseUrl}}"
           ],
           "path": [
             "1",
-            "lists",
-            "{{listId}}",
-            "closed"
+            "boards",
+            "{{boardId}}"
           ],
           "query": [
-            {
-              "key": "value",
-              "value": "false"
-            },
             {
               "key": "key",
               "value": "{{apiKey}}"
@@ -991,8 +880,8 @@
           "listen": "test",
           "script": {
             "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
+              "pm.test(\"Status code is 404 - Confirmed Deleted\", function () {\r",
+              "    pm.response.to.have.status(404);\r",
               "});"
             ],
             "type": "text/javascript",
