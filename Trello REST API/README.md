@@ -1,15 +1,15 @@
 ### 📸 Project Screenshots
 
-Visual proof of the automated test execution and the resulting state of the Trello board.
+Visual evidence of the automated test suite execution and final system state.
 
-| **Test Run Summary (Part 1)** | **Test Run Summary (Part 2)** |
+| **Automated Test Workflow** | **Test Execution (Part 1)** |
 | :---: | :---: |
-| ![Part 1](https://github.com/clarencefaithsaligumba/API-Testing-Portfolio/blob/4de223a2c1dd92cadf82d6e03e38cd01aa9ce30f/Trello%20REST%20API/Screenshots/Test_Execution_Summary_p1.png) | ![Part 2](https://github.com/clarencefaithsaligumba/API-Testing-Portfolio/blob/4de223a2c1dd92cadf82d6e03e38cd01aa9ce30f/Trello%20REST%20API/Screenshots/Test_Execution_Summary_p2.png) |
-| *Full CRUD operations for Boards, Lists, and Cards.* | *Validation of updated resources and initial negative tests.* |
+| ![Execution Workflow](https://github.com/clarencefaithsaligumba/API-Testing-Portfolio/blob/d7e2c7d487152292e80eb603effb7f97e2eb1ae1/Trello%20REST%20API/Screenshots/Trello_REST_API_Execution_Schedule.png) | ![Test Run Part 1](https://github.com/clarencefaithsaligumba/API-Testing-Portfolio/blob/main/Trello%20REST%20API/Screenshots/Test_Execution_Summary_p1.png?raw=true) |
+| *Step-by-step logic from Board creation to resource deletion.* | *Status: 100% Pass rate for core CRUD operations.* |
 
 <br>
 
-| **Trello Board Output** |
-| :---: |
-| ![Trello Board](https://github.com/clarencefaithsaligumba/API-Testing-Portfolio/blob/4de223a2c1dd92cadf82d6e03e38cd01aa9ce30f/Trello%20REST%20API/Screenshots/Trello_Final_Output.png) |
-| *Visual confirmation on Trello.com showing the dynamically generated Board ('Development-540'), List, and Card.* |
+| **Test Execution (Part 2)** | **Trello UI Verification** |
+| :---: | :---: |
+| ![Test Run Part 2](https://github.com/clarencefaithsaligumba/API-Testing-Portfolio/blob/main/Trello%20REST%20API/Screenshots/Test_Execution_Summary_p2.png?raw=true) | ![Trello Board](https://github.com/clarencefaithsaligumba/API-Testing-Portfolio/blob/main/Trello%20REST%20API/Screenshots/Trello_Final_Output.png?raw=true) |
+| *Validation of updated resources and environment variables.* | *Live confirmation of the dynamically generated board.* |
