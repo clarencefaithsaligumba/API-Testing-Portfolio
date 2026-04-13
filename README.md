@@ -1,6 +1,3 @@
-Narito ang markdown version na handa mo nang i-copy at i-paste sa iyong README.md file sa GitHub. Ginawa ko itong malinis, simple, at professional para sa iyong portfolio.
-
-Markdown
 # 🚀 Trello API Testing Portfolio
 **Clarence Faith B. Saligumba**
 
